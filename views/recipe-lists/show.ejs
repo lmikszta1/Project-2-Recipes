@@ -9,9 +9,9 @@
         <li>
             <% if(user){ %>
                 <form action="/recipes/<%= recipeList.id %>/<%= recipe.id %>?_method=DELETE" method="POST">
+                    <button type="submit">X</button>
+                </form>
             <% } %>        
-                <button type="submit">X</button>
-            </form>
             <h5>
                 <%= recipe.name %>
             </h5>
