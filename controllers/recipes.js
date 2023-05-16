@@ -1,9 +1,7 @@
 const RecipeList = require('../models/recipe-list');
 
-
-
 function addRecipeToList(req, res, next){
-    RecipeList.findById(req.params.recipeId)
+    RecipeList.findById(req.params.recipeListId)
         .then(recipeList => {
             recipeList.recipes.push(req.body);
 

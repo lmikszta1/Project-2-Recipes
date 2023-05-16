@@ -4,7 +4,14 @@ const passport = require('passport')
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
-	res.render('index', { title: 'Express' })
+	fetch('https://www.themealdb.com/api/json/v1/1/list.php?c=list')
+		.then(res => res.json())
+		.then(categories => {
+			res.render('recipes/index', {
+				categories: categories.meals,
+				title: 'Recipe Categories'
+			})
+		})
 })
 
 router.get(

@@ -1,0 +1,21 @@
+.category-card {
+    gap: 5px;
+}
+
+.card-content {
+    margin-top: 8px;
+}
+
+.card-title {
+    font-size: 25px;
+}
+
+.card {
+    background-color: lightgray;
+}
+
+#category-page-title {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
