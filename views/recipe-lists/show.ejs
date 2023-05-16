@@ -1,0 +1,31 @@
+<%- include('../partials/header.ejs') %>
+
+<h3>
+    <%= recipeList.name %>
+</h3>
+
+<ul>
+    <% recipeList.recipes.forEach(function(recipe) { %>
+        <li>
+            <% if(user){ %>
+                <form action="/recipes/<%= recipeList.id %>/<%= recipe.id %>?_method=DELETE" method="POST">
+            <% } %>        
+                <button type="submit">X</button>
+            </form>
+            <h5>
+                <%= recipe.name %>
+            </h5>
+        </li>
+    <% }); %>
+</ul>
+
+<% if(user) { %>
+    <form action="/recipes/<%= recipeList.id %>" method="POST">
+        <input type="text" name="name">
+        <button type="submit">Add Recipe</button>
+    </form>
+    <a href="/recipe-lists/<%= recipeList.id %>/edit">Edit</a>
+<% } %>
+
+
+<%- include('../partials/footer.ejs') %>

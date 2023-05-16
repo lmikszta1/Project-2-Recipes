@@ -1,0 +1,18 @@
+<%- include('../partials/header') %>
+
+<h2>Recipe Lists</h2>
+
+<ul>
+    <% recipeLists.forEach(function(recipeList) { %>
+        <li>
+            <form action="/recipe-lists/<%= recipeList.id %>?_method=DELETE" method="POST">
+                <button type="submit">X</button>
+            </form>
+            <a href="/recipe-lists/<%= recipeList.id %>">
+                <%= recipeList.name %>
+            </a>
+        </li>
+    <% }); %>
+</ul>
+
+<%- include('../partials/footer') %>
