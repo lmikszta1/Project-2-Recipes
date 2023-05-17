@@ -1,0 +1,16 @@
+<%- include('../partials/header') %>
+
+<h2 id="category-page-title">Recipe Categories:</h2>
+<div class="flex flex-row flex-wrap items-center justify-center category-card">
+    <% categories.forEach(function(category) { %>
+        <div class="bg-gray-300" style="width: 18rem;">
+            <div>
+                <h5 class="card-title flex items-center justify-center">
+                    <a href="/recipes/<%= category.strCategory %>" class="btn btn-outline-primary btn-lg"><%= category.strCategory %></a>
+                </h5>
+            </div>
+        </div>
+    <% }); %>
+</div>
+
+<%- include('../partials/footer') %>

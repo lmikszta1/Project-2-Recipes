@@ -7,7 +7,7 @@ router.get('/', function (req, res, next) {
 	fetch('https://www.themealdb.com/api/json/v1/1/list.php?c=list')
 		.then(res => res.json())
 		.then(categories => {
-			res.render('recipes/index', {
+			res.render('categories/index', {
 				categories: categories.meals,
 				title: 'Recipe Categories'
 			})

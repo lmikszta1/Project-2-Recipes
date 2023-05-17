@@ -1,16 +1,17 @@
-<%- include('../partials/header') %>
+<%- include('../partials/header.ejs') %>
 
-<h2 id="category-page-title">Recipe Categories:</h2>
-<div class="container text-center">
-    <% categories.forEach(function(category) { %>
-        <div class="card" style="width: 18rem;">
-            <div class="d-flex flex-column align-items-center justify-content-center card-content">
-                <h5 class="card-title">
-                    <a href="/recipes/<%= category.strCategory %>" class="btn btn-outline-primary btn-lg"><%= category.strCategory %></a>
+<h3>Recipes:</h3>
+<div class="recipes-container">
+    <% recipes.forEach(function(recipe){ %>
+        <div class="recipes-card" style="width: 18rem;">
+            <div class="recipes-card-body">
+                <h5 class="recipes-card-title">
+                    <%= recipe.strMeal %>
                 </h5>
+                <a href="/recipes/show/<%= recipe.strMeal %>" class="recipes-card-link">Details</a>
             </div>
         </div>
     <% }); %>
 </div>
 
-<%- include('../partials/footer') %>
+<%- include('../partials/footer.ejs') %>

@@ -1,0 +1,19 @@
+<%- include('../partials/header.ejs') %>
+
+<h3>Recipe Details</h3>
+<div class="recipe-container">
+    <div class="recipe-card" style="width: 18rem;">
+        <img src="<%= recipe.strMealThumb %>" class="recipe-card-img-top" alt="<%= recipe.strMeal %>">
+        <div class="recipe-card-body">
+            <h5 class="recipe-card-title">
+                <%= recipe.strMeal %>
+            </h5>
+            <h4>Instructions:</h4>
+            <p class="recipe-card-ingredients">
+                <%= recipe.strInstructions %>
+            </p>
+        </div>
+    </div>
+</div>
+
+<%- include('../partials/footer.ejs') %>

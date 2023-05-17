@@ -10,12 +10,12 @@
     font-size: 25px;
 }
 
-.card {
-    background-color: lightgray;
-}
-
 #category-page-title {
     display: flex;
     justify-content: center;
     font-size: 30px;
+}
+
+.recipe-card-img-top {
+    width: 500px;
 }
