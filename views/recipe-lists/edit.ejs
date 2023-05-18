@@ -1,8 +1,8 @@
 <%- include('../partials/header') %>
 
-<form action="/recipe-lists/<%= recipeList.id %>?_method=PUT" method="POST" autocomplete="off">
-    <input type="text" name="name" value="<%= recipeList.name %>">
-    <button type="submit">Update Recipe List</button>
+<form action="/recipe-lists/<%= recipeList.id %>?_method=PUT" method="POST" autocomplete="off" class="mt-2 ml-2 flex flex-col place-content-center" style="width: 18rem;">
+    <input type="text" name="name" value="<%= recipeList.name %>" class="enabled border-2 border-slate-500 caret-slate-200 focus:outline-none focus:border-sky-600 focus:ring-1 focus:ring-sky-600 rounded">
+    <button type="submit" class="mt-2 bg-gray-300 rounded underline text-sky-600 font-Lato">Update Recipe List</button>
 </form>
 
 <%- include('../partials/footer') %>
