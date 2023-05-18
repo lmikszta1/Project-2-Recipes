@@ -1,18 +1,31 @@
 <%- include('../partials/header') %>
 
-<h2 class="flex flex-row justify-start text-3xl pt-2 pl-2 font-Playfair">Recipe Lists:</h2>
+<h2 class="flex flex-row justify-start text-3xl pt-2 pl-2 font-Playfair">
+    Recipe Lists:
+</h2>
 
 <ul>
     <% recipeLists.forEach(function(recipeList) { %>
-        <li>
-            -
-            <a href="/recipe-lists/<%= recipeList.id %>" class="text-2xl underline text-blue-700 font-Lato">
-                <%= recipeList.name %>
-            </a>
-            <form action="/recipe-lists/<%= recipeList.id %>?_method=DELETE" method="POST">
-                <button type="submit" class="bg-red-600 rounded text-xl ml-5 mb-2.5 font-RobotoMono">DELETE</button>
-            </form>
-        </li>
+    <li>
+        -
+        <a
+            href="/recipe-lists/<%= recipeList.id %>"
+            class="text-2xl underline text-blue-700 font-Lato"
+        >
+            <%= recipeList.name %>
+        </a>
+        <form
+            action="/recipe-lists/<%= recipeList.id %>?_method=DELETE"
+            method="POST"
+        >
+            <button
+                type="submit"
+                class="bg-red-600 rounded text-xl ml-5 mb-2.5 font-RobotoMono"
+            >
+                DELETE
+            </button>
+        </form>
+    </li>
     <% }); %>
 </ul>
 

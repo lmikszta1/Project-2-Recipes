@@ -1,9 +1,27 @@
 <%- include('../partials/header') %>
 
-<h3 class="flex flex-row justify-start text-3xl pt-2 pl-2 font-Playfair">Add a new recipe list:</h3>
-<form action="/recipe-lists" method="POST" autocomplete="off" class="mt-2 ml-5 flex flex-col place-content-center" style="width: 18rem;">
-    <input type="text" name="name" class="enabled border-2 border-slate-500 caret-slate-200 focus:outline-none focus:border-sky-600 focus:ring-1 focus:ring-sky-600 rounded text-black" placeholder="Input a list name">
-    <button type="submit" class="mt-2 bg-gray-300 rounded underline text-sky-600 font-Lato">Save Recipe List</button>
+<h3 class="flex flex-row justify-start text-3xl pt-2 pl-2 font-Playfair">
+    Add a new recipe list:
+</h3>
+<form
+    action="/recipe-lists"
+    method="POST"
+    autocomplete="off"
+    class="mt-2 ml-5 flex flex-col place-content-center"
+    style="width: 18rem"
+>
+    <input
+        type="text"
+        name="name"
+        class="enabled border-2 border-slate-500 caret-slate-200 focus:outline-none focus:border-sky-600 focus:ring-1 focus:ring-sky-600 rounded text-black"
+        placeholder="Input a list name"
+    />
+    <button
+        type="submit"
+        class="mt-2 bg-gray-300 rounded underline text-sky-600 font-Lato"
+    >
+        Save Recipe List
+    </button>
 </form>
 
 <%- include('../partials/footer') %>

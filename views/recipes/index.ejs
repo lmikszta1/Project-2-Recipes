@@ -1,16 +1,24 @@
 <%- include('../partials/header.ejs') %>
 
-<h3 class="flex flex-row justify-center text-3xl pb-7 font-Playfair">Recipes:</h3>
+<h3 class="flex flex-row justify-center text-3xl pb-7 font-Playfair">
+    Recipes:
+</h3>
 <div class="flex flex-row flex-wrap items-center justify-center gap-2 mx-60">
     <% recipes.forEach(function(recipe){ %>
-        <div class="bg-slate-300 rounded" style="width: 25rem;">
-            <div class="recipes-card-body">
-                <h5 class="text-xl flex items-center justify-center text-center font-Lato">
-                    <%= recipe.strMeal %>
-                </h5>
-                <a href="/recipes/show/<%= recipe.strMeal %>" class="text-l flex items-center justify-center underline cursor-pointer font-Lato">Details</a>
-            </div>
+    <div class="bg-slate-300 rounded" style="width: 25rem">
+        <div class="recipes-card-body">
+            <h5
+                class="text-xl flex items-center justify-center text-center font-Lato"
+            >
+                <%= recipe.strMeal %>
+            </h5>
+            <a
+                href="/recipes/show/<%= recipe.strMeal %>"
+                class="text-l flex items-center justify-center underline cursor-pointer font-Lato"
+                >Details</a
+            >
         </div>
+    </div>
     <% }); %>
 </div>
 
