@@ -44,37 +44,36 @@
 
     <body>
         <header
-            class="sticky top-0 bg-slate-400 shadow-md z-50 w-full px-5 py-2 flex justify-between items-center font-Lato"
+            class="sticky top-0 bg-sky-900 shadow-md z-50 w-full px-5 py-2 flex justify-between items-center font-Lato"
         >
-            <img src="/images/logo.png" style="width: 50px" />
-            <a href="/" class="text-3xl text-black font-Playfair">Recipes</a>
+            <img src="/images/logo.png" class="invert" style="width: 50px" />
+            <a href="/" class="text-3xl text-white font-Playfair">Recipes</a>
             <div>
                 <% if(user){ %>
                 <a
                     href="/recipe-lists"
-                    class="text-white hover:bg-gray-700 px-3 rounded py-1"
+                    class="text-white hover:bg-sky-950 px-3 rounded py-1"
                     >All Lists</a
                 >
                 <a
                     href="/recipe-lists/new"
-                    class="text-white hover:bg-gray-700 px-3 rounded py-1"
+                    class="text-white hover:bg-sky-950 px-3 rounded py-1"
                     >Add List</a
                 >
                 <a
                     href="/logout"
-                    class="text-white hover:bg-gray-700 px-3 rounded py-1"
+                    class="text-white hover:bg-sky-950 px-3 rounded py-1"
                     >Log Out</a
                 >
                 <% } else { %>
                 <a
                     href="/auth/google"
-                    class="text-white hover:bg-gray-700 px-3 rounded py-1"
+                    class="text-white hover:bg-sky-950 px-3 rounded py-1"
                     >Log in</a
                 >
                 <% } %>
             </div>
         </header>
 
-        <main class="bg-gradient-to-b from-sky-200 to-white mb-4"></main>
-    </body>
-</html>
+        <main class="bg-gradient-to-b from-sky-200 to-white mb-4">
+  
