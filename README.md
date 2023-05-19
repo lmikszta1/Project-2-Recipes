@@ -1,5 +1,9 @@
 # Recipe Lists! - Create your own recipe lists
 
+## Getting Started:
+- You can visit the site [here](https://recipelists.fly.dev/)
+- Project planning [trello](https://trello.com/b/npZjdwcy/project-2) board. 
+
 ## Website Screenshots: 
 <img src ="https://i.imgur.com/ypxC0Cp.png">
 <img src ="https://i.imgur.com/L2hLVwn.png">
@@ -22,9 +26,6 @@
 - Bootstrap
 - Tailwind
 
-## Getting Started:
-- You can visit the site [here](https://recipelists.fly.dev/)
-- Project planning [trello](https://trello.com/b/npZjdwcy/project-2) board. 
 
 ## Next Steps:
 - Use TheMealDb API recipes in my model so users can click on recipes to show it's details in the recipe list show view.
