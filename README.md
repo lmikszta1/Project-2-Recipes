@@ -25,6 +25,7 @@
 - OAuth
 - Bootstrap
 - Tailwind
+- TheMealDB API
 
 
 ## Next Steps:
